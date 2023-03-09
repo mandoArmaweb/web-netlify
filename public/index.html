@@ -11,32 +11,102 @@
     />
   </head>
   <style>
-   h1 {
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+
+.wrapper h2 {
+    position: absolute;
+    color: black;
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 87px;
-   }
+    padding: 55px;
+}
 
-   article {
-    text-align: right;
-    left: 0;
-   }
+h2 {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    transform: translate(50%, 50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: #0000;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.box div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid rgba(255,255,255,.0);
+}
+
+.box div i {
+    font-size: 6.2em;
+}
+
+
+
+
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 4;
+    }
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
 
   </style>
   <body>
       
-    <h1>BienvenidoA Programando A solas</h1>
+   <div class="wrapper">
+      <h2>Programando A solas</h2> <br>
+       <a href="/hello-template">Hello Template</a>
+      <div class="box">
+         <div><i class='bx bxl-facebook-square bx-tada' ></i></div>
+         <div><i class='bx bxl-instagram-alt bx-tada' ></i></div>
+          <div><i class='bx bxl-twitter bx-tada' ></i></div>
+          <div><i class='bx bxl-github bx-fade-up' ></i></div>
+          <div><i class='bx bxl-git bx-fade-right' ></i></div>
+          <div><i class='bx bxl-python bx-fade-left bx-rotate-90' ></i></div>
+          <div><i class='bx bxl-youtube bx-fade-right bx-rotate-90' ></i></div>
+          <div><i class='bx bxl-discord bx-fade-down bx-rotate-90' ></i></div>
+          <div><i class='bx bxl-javascript bx-spin bx-rotate-90' ></i></div>
+          <div><i class='bx bxs-file-json bx-burst bx-rotate-90' ></i></div>
+          <div><i class='bx bxl-tailwind-css bx-fade-up bx-flip-horizontal' ></i></div>
+          <div><i class='bx bxl-nodejs bx-fade-up bx-rotate-90' ></i></div>
+          <div><i class='bx bxs-file-js bx-flashing' ></i></div>
+          <div><i class='bx bxl-html5 bx-fade-right' ></i></div>
+          <div><i class='bx bxl-graphql bx-fade-left bx-rotate-180' ></i></div>
+          <div><i class='bx bxl-redux bx-fade-down bx-rotate-180' ></i></div>
+         
+      </div>
+    </div>
      <a href="/hello-template">Hello Template</a>
 
-        <div class="social-media">
-          <a href="#"> <i class="bx bxl-facebook-square">Facebook</i> </a>
-          <a href="#"> <i class="bx bxl-twitter">Twitter</i> </a>
-          <a href="#"> <i class="bx bxl-youtube">Youtube</i> </a>
-          <a href="#"> <i class="bx bxl-github">Github</i> </a>
-        </div>
-        <a href="#" class="btn">Download CV </a>
-      </div>
   
   </body>
 </html>
